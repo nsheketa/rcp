@@ -1443,7 +1443,8 @@ body, html {
 
 main {
   width: 100%;
-  overflow-x: hidden; }
+  max-width: 100%;
+  overflow: hidden; }
 
 body {
   margin: 0;
@@ -1570,8 +1571,16 @@ a {
   z-index: 0; }
 
 .images__section {
-  padding: 6.25rem 0;
   position: relative; }
+
+.images__section-01 {
+  padding: 6.25rem 0; }
+
+.image__section-header {
+  width: 100%;
+  margin-bottom: 6.25rem; }
+  .image__section-header img {
+    width: 100%; }
 
 .img-section01__wrap-01 {
   margin-top: 35%; }
@@ -1599,12 +1608,6 @@ a {
   left: 0;
   right: 0; }
 
-.image__section-02-header {
-  width: 100%;
-  margin-bottom: 6.25rem; }
-  .image__section-02-header img {
-    width: 100%; }
-
 .img-section02__wrap-02 {
   margin-top: 28%; }
 
@@ -1617,6 +1620,28 @@ a {
 
 .img-section02__wrap-05 {
   margin-top: -20%; }
+
+.images__section-03 {
+  padding-bottom: 6.25rem; }
+
+.image__section-03-header {
+  margin-top: -4px; }
+
+.img-section03__wrap-01 {
+  padding-right: 7%; }
+
+.img-section03__wrap-02 {
+  margin-top: 48%; }
+
+.img-section03__wrap-04 {
+  margin-top: 71%; }
+
+.img-section03__wrap-05 {
+  margin-top: -25%; }
+
+.img-section03__wrap-06 {
+  margin-top: 10%;
+  padding-left: 10%; }
 
 @media only screen and (max-width: 1400px) {
   .images__section-title {
@@ -1642,9 +1667,6 @@ a {
   .img-section02__wrap-03 {
     padding-right: 0%; } }
 @media only screen and (max-width: 576px) {
-  .images__section {
-    padding: 6.25rem 0 0; }
-
   .images__section-title {
     font-size: 2rem;
     letter-spacing: 0.3rem;

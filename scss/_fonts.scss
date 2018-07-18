@@ -1,0 +1,12 @@
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('#{$fontsUrl}Ogg-Roman.eot');
+  src: url('#{$fontsUrl}Ogg-Roman.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Ogg-Roman.woff2') format('woff2'),
+  url('#{$fontsUrl}Ogg-Roman.woff') format('woff'),
+  url('#{$fontsUrl}Ogg-Roman.ttf') format('truetype'),
+  url('#{$fontsUrl}Ogg-Roman.svg#Ogg-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

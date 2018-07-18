@@ -1,0 +1,50 @@
+//custom reseting
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
+main{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $baseFontFamily;
+  font-weight: 400;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $textColor;
+  background: $bodyBackground;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, button, a {outline: none;}
+
+img{
+  max-width: 100%;
+  min-height: 1px;
+}
+
+a{
+  color: $textColor;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active{
+    text-decoration: none;
+    color: $textColor;
+  }
+}
+
+//importing style modules for pages and section
+
+@import "style_modules/text-style";
+@import "style_modules/general-styles";
+@import "style_modules/header";
+@import "style_modules/images-section-01";

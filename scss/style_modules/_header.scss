@@ -25,17 +25,17 @@
 }
 
 .header__logo{
-  text-transform: uppercase;
-  text-align: center;
   z-index: 5;
   position: absolute;
-  top: 60px;
+  top: 49px;
   left: 0;
   right: 0;
   margin: auto;
-  span{
-    font-weight: bold;
-  }
+  //height: 44px;
+  //width: 100%;
+  width: 300px;
+  height: 47px;
+  background: url("#{$imgUrl}logo.png")no-repeat center /contain;
 }
 
 .header-nav{
@@ -106,4 +106,45 @@
   margin-left: auto;
   background: url("#{$imgUrl}header.jpg")no-repeat top center /cover;
   z-index: 0;
+}
+
+
+@media only screen and (max-width: map-get($grid-breakpoints, lg)){
+  .header-nav {
+    width: 25%;
+  }
+
+  .header-nav__top {
+    top: 125px;
+  }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, md)){
+  .header{
+    &:before{
+      display: none;
+    }
+    &:after{
+      display: none;
+    }
+  }
+  .header-nav__top {
+    left: 30px;
+  }
+
+  .header-nav__bottom {
+    right: 30px;
+  }
+
+  .header-nav {
+    width: 40%;
+  }
+
+  .header__line{
+    display: none;
+  }
+
+  .header__bg{
+    width: 100%;
+  }
 }

@@ -1503,16 +1503,15 @@ a {
     bottom: -20px; }
 
 .header__logo {
-  text-transform: uppercase;
-  text-align: center;
   z-index: 5;
   position: absolute;
-  top: 60px;
+  top: 49px;
   left: 0;
   right: 0;
-  margin: auto; }
-  .header__logo span {
-    font-weight: bold; }
+  margin: auto;
+  width: 300px;
+  height: 47px;
+  background: url("../img/logo.png") no-repeat center/contain; }
 
 .header-nav {
   position: absolute;
@@ -1570,6 +1569,32 @@ a {
   background: url("../img/header.jpg") no-repeat top center/cover;
   z-index: 0; }
 
+@media only screen and (max-width: 992px) {
+  .header-nav {
+    width: 25%; }
+
+  .header-nav__top {
+    top: 125px; } }
+@media only screen and (max-width: 768px) {
+  .header:before {
+    display: none; }
+  .header:after {
+    display: none; }
+
+  .header-nav__top {
+    left: 30px; }
+
+  .header-nav__bottom {
+    right: 30px; }
+
+  .header-nav {
+    width: 40%; }
+
+  .header__line {
+    display: none; }
+
+  .header__bg {
+    width: 100%; } }
 .images__section {
   position: relative; }
 
@@ -1596,6 +1621,9 @@ a {
 
 .img-section01__wrap-05 {
   margin-top: 25%; }
+
+.images__section-02 {
+  padding-top: 6.25rem; }
 
 .images__section-title {
   text-align: center;
@@ -1643,6 +1671,28 @@ a {
   margin-top: 10%;
   padding-left: 10%; }
 
+.images__section-04 {
+  padding-bottom: 6.25rem; }
+
+.img-section04__wrap-02 {
+  margin-top: 15%;
+  padding-left: 7%; }
+
+.img-section04__wrap-03 {
+  margin-top: -27%;
+  padding-left: 15%; }
+
+.img-section04__wrap-04 {
+  padding-left: 7%;
+  margin-top: 10%; }
+
+.img-section04__wrap-05 {
+  margin-top: -25%; }
+
+.img-section04__wrap-06 {
+  margin-top: 20%;
+  padding-left: 6%; }
+
 @media only screen and (max-width: 1400px) {
   .images__section-title {
     font-size: 6rem;
@@ -1659,10 +1709,13 @@ a {
     letter-spacing: 1.2rem;
     top: -4px; } }
 @media only screen and (max-width: 768px) {
+  .images__section-02 {
+    padding-top: 0; }
+
   .images__section-title {
     font-size: 3rem;
     letter-spacing: 1rem;
-    top: 22px; }
+    top: -77px; }
 
   .img-section02__wrap-03 {
     padding-right: 0%; } }
@@ -1670,4 +1723,4 @@ a {
   .images__section-title {
     font-size: 2rem;
     letter-spacing: 0.3rem;
-    top: 50px; } }
+    top: -52px; } }

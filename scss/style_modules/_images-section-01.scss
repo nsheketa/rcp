@@ -40,6 +40,10 @@
 
 
 //section 02
+.images__section-02{
+  padding-top: 6.25rem;
+}
+
 .images__section-title{
   text-align: center;
   font-size: 8rem;
@@ -106,6 +110,44 @@
   padding-left: 10%;
 }
 
+//section 03
+.images__section-04{
+  padding-bottom: 6.25rem;
+}
+
+.image__section-04-header{
+
+}
+
+.img-section04__wrap-01{
+
+}
+
+.img-section04__wrap-02{
+  margin-top: 15%;
+  padding-left: 7%;
+}
+
+.img-section04__wrap-03{
+  margin-top: -27%;
+  padding-left: 15%;
+}
+
+.img-section04__wrap-04{
+  padding-left: 7%;
+  margin-top: 10%;
+}
+
+.img-section04__wrap-05{
+  margin-top: -25%;
+}
+
+.img-section04__wrap-06{
+  margin-top: 20%;
+  padding-left: 6%;
+}
+
+
 
 @media only screen and (max-width: map-get($grid-breakpoints, xxl)){
   .images__section-title{
@@ -133,10 +175,13 @@
 
 
 @media only screen and (max-width: map-get($grid-breakpoints, md)){
+  .images__section-02 {
+    padding-top:  0;
+  }
   .images__section-title{
     font-size: 3rem;
     letter-spacing: 1rem;
-    top: 22px;
+    top: -77px;
   }
   .img-section02__wrap-03{
     padding-right: 0%;
@@ -145,12 +190,13 @@
 
 
 @media only screen and (max-width: map-get($grid-breakpoints,sm)){
-  //.images__section {
-  //  padding: 6.25rem 0 0;
-  //}
   .images__section-title{
     font-size: 2rem;
     letter-spacing: 0.3rem;
-    top: 50px;
+    top: -52px;
   }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints,xs)){
+
 }

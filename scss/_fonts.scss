@@ -10,3 +10,16 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('#{$fontsUrl}BrandonGrotesque-Light.eot');
+  src: url('#{$fontsUrl}BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}BrandonGrotesque-Light.woff2') format('woff2'),
+  url('#{$fontsUrl}BrandonGrotesque-Light.woff') format('woff'),
+  url('#{$fontsUrl}BrandonGrotesque-Light.ttf') format('truetype'),
+  url('#{$fontsUrl}BrandonGrotesque-Light.svg#BrandonGrotesque-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+

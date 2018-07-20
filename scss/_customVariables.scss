@@ -1,4 +1,5 @@
 $Ogg: 'Ogg', sans-serif;
+$Brandon: 'Brandon Grotesque', sans-serif;
 
 $baseFontFamily: $Ogg;
 $baseFontSize: 1rem;
@@ -9,14 +10,13 @@ $bodyBackground: #fff;
 $fontsUrl: "../fonts/";
 $imgUrl: "../img/";
 
-
 //bootstrap overwrite
 
 $grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px,
-        xxl:1400px
+ xs: 0,
+ sm: 576px,
+ md: 768px,
+ lg: 992px,
+ xl: 1200px,
+ xxl:1400px
 )

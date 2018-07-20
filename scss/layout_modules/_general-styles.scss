@@ -5,3 +5,9 @@
 .right-0{
   margin-right: -15px;
 }
+
+body{
+  &.no-scroll{
+    overflow-y: hidden;
+  }
+}

@@ -33,19 +33,21 @@ img{
 }
 
 a{
-  color: $textColor;
   text-decoration: none;
   &:hover,
   &:focus,
   &:active{
     text-decoration: none;
-    color: $textColor;
   }
 }
-
+ul li{
+  list-style: none;
+}
 //importing style modules for pages and section
 
-@import "style_modules/text-style";
-@import "style_modules/general-styles";
-@import "style_modules/header";
-@import "style_modules/images-section-01";
+@import "layout_modules/text-style";
+@import "layout_modules/general-styles";
+@import "layout_modules/header";
+@import "layout_modules/menu";
+@import "layout_modules/images-section";
+@import "layout_modules/footer";

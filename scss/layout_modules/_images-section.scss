@@ -192,6 +192,16 @@
     top: -4px;
   }
 
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, md)){
+  .images__section-02 {
+    padding-top:  0;
+  }
+  .images__section-title{
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
   //section 1
   .img-section01__wrap-03 {
     margin-top: 7%;
@@ -204,6 +214,7 @@
   //section 2
   .images__section-02{
     padding-top: 0;
+    padding-bottom: 3rem;
   }
   .images__section-title{
     position: relative;
@@ -230,17 +241,6 @@
   .img-section02__wrap-05{
     display: none;
   }
-}
-
-@media only screen and (max-width: map-get($grid-breakpoints, md)){
-  .images__section-02 {
-    padding-top:  0;
-  }
-  .images__section-title{
-    font-size: 3rem;
-    letter-spacing: 1rem;
-  }
-
   .images__section-03,
   .images__section-04{
     display: none;

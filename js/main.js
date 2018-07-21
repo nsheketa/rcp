@@ -56,7 +56,7 @@ $(document).ready(function () {
   //fixed elements visibility
   function iconsVisibility() {
     var header = $('.header'),
-        icons = $('.header__line-link'),
+        links = $('.header__line-link'),
         headerTop = header.offset().top,
         headerHeight = parseInt(header.css('height')),
         headerBottom = headerTop + headerHeight,
@@ -64,6 +64,8 @@ $(document).ready(function () {
         windowHeight = window.innerHeight,
         footer = $('.footer'),
         footerTop = footer.offset().top,
+        main = $('main'),
+        mainBottom = main.offset().top + parseInt(main.css('height')),
         headerLineR = $('.header__line-right'),
         headerLineRBottom = headerLineR.offset().top + parseInt(headerLineR.css('height')),
         headerLineL = $('.header__line-left'),
@@ -73,7 +75,7 @@ $(document).ready(function () {
       $('.header__line-icon').addClass('visible');
       $('.header-nav').addClass('fixed');
     }
-    else if (headerLineRBottom >= footerTop){
+    else if ((headerLineRBottom >= footerTop)){
       $('.header__line-icon').addClass('visible');
       $('.header-nav').addClass('fixed');
     }

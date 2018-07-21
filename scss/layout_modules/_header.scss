@@ -18,11 +18,19 @@
 .header__line-left{
   top: 0;
   left: 50px;
+  &.fixed-bottom{
+    top: -250px;
+    height: 50%;
+  }
 }
 
 .header__line-right{
   right: 50px;
   bottom: -20px;
+  &.fixed-bottom{
+    bottom: 255px;
+    height: 50%;
+  }
 }
 
 .header__line-icon{
@@ -109,11 +117,18 @@
 .header-nav__top{
   left: 90px;
   top: 60px;
+  &.fixed-bottom{
+    position: fixed;
+  }
 }
 
 .header-nav__bottom{
   bottom: 60px;
   right: 90px;
+  &.fixed-bottom{
+    bottom: 310px;
+    position: fixed;
+  }
 }
 
 .header-nav__list{

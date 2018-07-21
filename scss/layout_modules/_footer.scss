@@ -107,6 +107,13 @@
   }
 }
 
+@media only screen and (max-width: map-get($grid-breakpoints, xxl)){
+  .footer-menu__list-item,
+  .footer-socials__link {
+    margin: 0 10px;
+  }
+}
+
 @media only screen and (max-width: map-get($grid-breakpoints, xl)){
   .footer-menu__wrap,
   .footer-socials-wrap{
@@ -114,7 +121,7 @@
   }
   .footer-menu__list-item,
   .footer-socials__link{
-    margin: 7px;
+    margin: 0 3px;
    &:first-of-type{
      margin-left: 0;
    }
@@ -140,6 +147,7 @@
   }
   .footer-menu__list-item{
     display: block;
+    margin-bottom: 7px;
   }
   .footer-menu__list-link{
     text-transform: uppercase;

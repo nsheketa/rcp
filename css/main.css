@@ -2209,6 +2209,10 @@ body.no-scroll {
 @media only screen and (min-width: 1200px) {
   .footer__container {
     max-width: 90%; } }
+@media only screen and (max-width: 1400px) {
+  .footer-menu__list-item,
+  .footer-socials__link {
+    margin: 0 10px; } }
 @media only screen and (max-width: 1200px) {
   .footer-menu__wrap,
   .footer-socials-wrap {
@@ -2219,7 +2223,7 @@ body.no-scroll {
 
   .footer-menu__list-item,
   .footer-socials__link {
-    margin: 7px; }
+    margin: 0 3px; }
     .footer-menu__list-item:first-of-type,
     .footer-socials__link:first-of-type {
       margin-left: 0; }
@@ -2241,7 +2245,8 @@ body.no-scroll {
     margin-bottom: 30px; }
 
   .footer-menu__list-item {
-    display: block; }
+    display: block;
+    margin-bottom: 7px; }
 
   .footer-menu__list-link {
     text-transform: uppercase; }

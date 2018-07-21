@@ -52,9 +52,12 @@ $(document).ready(function () {
         footer = $('.footer'),
         footerTop = footer.offset().top,
         headerLineR = $('.header__line-right'),
-        headerLineRBottom = headerLineR.offset().top + parseInt(headerLineR.css('height'));
+        headerLineRBottom = headerLineR.offset().top + parseInt(headerLineR.css('height')),
+        headerLineL = $('.header__line-left'),
+        headerLineLBottom = headerLineL.offset().top + parseInt(headerLineL.css('height'));
 
-    if (headerTop >= windowTop && headerBottom <= windowHeight){
+    // if (headerTop >= windowTop && headerBottom <= windowHeight){
+    if (headerLineLBottom <= headerBottom) {
       $('.header__line-icon').addClass('visible');
       $('.header-nav').addClass('fixed');
     }

@@ -1650,8 +1650,8 @@ body.no-scroll {
   .header-nav__top {
     top: 125px; } }
 @media only screen and (max-width: 768px) {
-  .header {
-    padding-top: 140px; }
+  .header__bg {
+    margin-top: 140px; }
 
   .header-nav {
     width: 40%;
@@ -1707,9 +1707,9 @@ body.no-scroll {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   opacity: 0;
   visibility: hidden;
   z-index: -1; }

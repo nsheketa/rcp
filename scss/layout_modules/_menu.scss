@@ -37,7 +37,7 @@
   @include transform(translateX(-100%));
   @include display-flex();
   @include flex-direction-col();
-  @include transition(0.3s all ease);
+  @include transition(0.3s all ease-in-out);
   opacity: 0;
   visibility: hidden;
   z-index: -1;

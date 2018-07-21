@@ -20,6 +20,17 @@ $(document).ready(function () {
     });
   }
 
+  //homepage slider
+  $('.header-bg__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: false,
+    arrows: false
+  });
+
+
   //header line navigation
  $('.header__line').mouseover(function () {
    $('.header__line-icon').addClass('visible');
@@ -28,7 +39,7 @@ $(document).ready(function () {
 
   $('.header__line').mouseout(function () {
     $('.header__line-icon').removeClass('visible');
-    $('.header-nav').removeClass('fixed');
+    // $('.header-nav').removeClass('fixed');
   });
 
   $('.header__line-icon,.header__line-link').mouseover(function () {
@@ -40,7 +51,6 @@ $(document).ready(function () {
   });
 
   //fixed elements visibility
-
   function iconsVisibility() {
     var header = $('.header'),
         icons = $('.header__line-link'),
@@ -56,7 +66,6 @@ $(document).ready(function () {
         headerLineL = $('.header__line-left'),
         headerLineLBottom = headerLineL.offset().top + parseInt(headerLineL.css('height'));
 
-    // if (headerTop >= windowTop && headerBottom <= windowHeight){
     if (headerLineLBottom <= headerBottom) {
       $('.header__line-icon').addClass('visible');
       $('.header-nav').addClass('fixed');
@@ -64,7 +73,6 @@ $(document).ready(function () {
     else if (headerLineRBottom >= footerTop){
       $('.header__line-icon').addClass('visible');
       $('.header-nav').addClass('fixed');
-
     }
     else{
       $('.header__line-icon').removeClass('visible');
@@ -73,7 +81,6 @@ $(document).ready(function () {
   }
 
   //menu
-
   $('.header__line-menu-link').click(function (e) {
     e.preventDefault();
     $('.menu').addClass('menu--open');
@@ -85,16 +92,20 @@ $(document).ready(function () {
     $('body').removeClass('no-scroll');
   });
 
-  $('.menu-list__link-design').click(function (e) {
-    e.preventDefault();
-    $('.menu-sublist').fadeToggle();
+  $('.menu-list__link,.menu-sublist__link').click(function (e){
+    if($(this).hasClass('menu-list__link-design')){
+      e.preventDefault();
+      $('.menu-sublist').fadeToggle();
+    }else{
+      $('.menu').removeClass('menu--open');
+      $('body').removeClass('no-scroll');
+    }
   });
 
   $('.mob-menu__btn').click(function () {
     $('.menu').addClass('menu--open')
     $('body').addClass('no-scroll');
   });
-
 
 
   // smooth scrolling

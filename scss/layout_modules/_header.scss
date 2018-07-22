@@ -5,35 +5,48 @@
   font-size: 1.2rem;
 }
 
-.header__line{
+.homepage__line{
   position: fixed;
   display: block;
   background-color: #000;
-  height: 70%;
+  height: 65vh;
   width: 1%;
   min-width: 25px;
   z-index: 50;
+  @include transition(0.3s all ease-in-out);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+  &.fixed{
+    position: fixed;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+  &.absolute{
+    position: absolute;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
 }
 
-.header__line-left{
+.homepage__line-left{
   top: 0;
   left: 50px;
-  &.fixed-bottom{
-    top: -250px;
-    height: 50%;
+  &.absolute{
+    bottom: 50vh;
+    top: unset;
   }
 }
 
-.header__line-right{
+.homepage__line-right{
   right: 50px;
-  bottom: -20px;
-  &.fixed-bottom{
-    bottom: 255px;
-    height: 50%;
+  bottom: 0;
+  &.absolute{
+    position: absolute;
   }
 }
 
-.header__line-icon{
+.homepage__line-icon{
   display: block;
   position: absolute;
   visibility: hidden;
@@ -51,17 +64,17 @@
   }
 }
 
-.header__line-left-icon{
+.homepage__line-left-icon{
   background: url("#{$imgUrl}general/plus-white.svg")no-repeat center /contain;
   bottom: 10px;
 }
 
-.header__line-right-icon{
+.homepage__line-right-icon{
   background: url("#{$imgUrl}general/arrow-up.svg")no-repeat center /contain;
   top: 10px;
 }
 
-.header__line-link{
+.homepage__line-link{
   position: absolute;
   text-transform: uppercase;
   color: #000;
@@ -81,14 +94,14 @@
   }
 }
 
-.header__line-menu-link{
+.homepage__line-menu-link{
   bottom: -35px;
-  left: -44px;
+  left: -34px;
 }
 
-.header__line-scroll-link{
+.homepage__line-scroll-link{
   top: -35px;
-  right: -42px;
+  right: -30px;
 }
 
 .header__logo{
@@ -118,7 +131,9 @@
   left: 90px;
   top: 60px;
   &.fixed-bottom{
-    position: fixed;
+    position: absolute;
+    top: unset;
+    bottom: 55vh;
   }
 }
 
@@ -126,8 +141,7 @@
   bottom: 60px;
   right: 90px;
   &.fixed-bottom{
-    bottom: 310px;
-    position: fixed;
+    position: absolute;
   }
 }
 
@@ -208,8 +222,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  //@include square(100%);
-  //width: 100%;
 }
 
 .header-bg__slider-item-01{}
@@ -235,11 +247,11 @@
     display: none;
   }
 
-  .header__line-left{
+  .homepage__line-left{
     left: 0;
   }
 
-  .header__line-right{
+  .homepage__line-right{
     right: 0;
   }
 }

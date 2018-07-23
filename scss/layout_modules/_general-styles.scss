@@ -12,6 +12,18 @@ body{
   }
 }
 
-.homepage-content__wrapper{
-  position: relative;
+
+@media only screen and (max-width: map-get($grid-breakpoints, md)){
+  .left-sm-0{
+    margin-left: -15px;
+  }
+  .right-sm-0{
+    margin-right: -15px;
+  }
+  .left-sm-15{
+    margin-left: 15px;
+  }
+  .right-sm-15{
+    margin-right: 15px;
+  }
 }

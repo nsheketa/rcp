@@ -1,0 +1,106 @@
+.subscribe{
+  background-color: #d7d7d7;
+  height: 422px;
+  padding-top: 94px;
+  text-align: center;
+}
+
+.subscribe__title{
+  font-size: 2.3rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.subscribe__subtitle{
+  font-size: 0.8rem;
+  letter-spacing: 0.7px;
+  margin-bottom: 2rem;
+  font-family: $Brandon;
+}
+
+.subscribe__form{
+  @include center();
+  min-width: 47%;
+  max-width: 70%;
+  width: 500px;
+  position: relative;
+  height: 72px;
+
+}
+
+.subscribe__input-wrap{
+  height: 100%;
+  width: 100%;
+  padding-right: 22%;
+}
+
+.subscribe__input{
+  background-color: #e4e4e4;
+  @include square(100%);
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-family: $Brandon;
+  font-size: 0.8rem;
+}
+
+.subscribe__btn-wrap{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22%;
+  height: 100%;
+}
+
+.subscribe__btn{
+  background-color: #ebebeb;
+  @include square(100%);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.6;
+  border: none;
+  outline: none;
+  font-family: $baseFontFamily;
+  letter-spacing: 1.7px;
+  cursor: pointer;
+  @include transition(0.3s all ease-in-out);
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: lighten(#ebebeb, 5%);
+  }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints,md)){
+  .subscribe__form {
+    min-width: 80%;
+    min-width: 80%;
+    height: 50px;
+  }
+  .subscribe__btn{
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints,sm)){
+  .subscribe__title{
+    font-size: 2rem;
+  }
+  .subscribe__subtitle{
+    max-width: 55%;
+    @include center();
+  }
+  .subscribe__form {
+    min-width: 80%;
+    height: 50px;
+  }
+  .subscribe__input-wrap{
+    padding-right: 23%;
+  }
+  .subscribe__btn-wrap{
+    width: 23%;
+  }
+  .subscribe__btn{
+    font-size: 0.6rem;
+  }
+}

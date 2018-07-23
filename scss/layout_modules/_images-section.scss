@@ -1,21 +1,33 @@
 .images__section{
   position: relative;
 }
-
-.images__section-01{
-  padding: 6.25rem 0;
-}
-
 .img__wrap{
 
 }
 
 .image__section-header{
   width: 100%;
-  margin-bottom: 6.25rem;
-  img{
-    width: 100%;
-  }
+  margin-bottom: 5rem;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include size(100%, 100vh);
+}
+
+.image__section-02-header{
+  background-image: url("#{$imgUrl}homepage/images-section-2-header.gif");
+}
+.image__section-03-header{
+  background-image: url("#{$imgUrl}homepage/images-section-3-header.jpg");
+}
+.image__section-04-header{
+  background-image: url("#{$imgUrl}homepage/images-section-4-header.jpg");
+}
+
+//section 1
+.images__section-01{
+  padding: 5rem 0;
 }
 
 .img-section01__wrap-01{
@@ -40,20 +52,23 @@
 
 
 //section 02
+
 .images__section-02{
-  padding-top: 6.25rem;
+  padding-top: 8rem;
 }
 
 .images__section-title{
   text-align: center;
-  font-size: 8rem;
+  font-size: 11rem;
   font-weight: 400;
   z-index: 10;
-  letter-spacing: 2rem;
+  letter-spacing: 14px;
   position: absolute;
-  top: -109px;
+  top: -160px;
   left: 0;
   right: 0;
+
+  //display: none;
 }
 
 .img-section02__wrap-01{
@@ -79,7 +94,7 @@
 
 //section 03
 .images__section-03{
-  padding-bottom: 6.25rem;
+  padding-bottom: 5rem;
 }
 .image__section-03-header{
   margin-top: -4px;
@@ -112,7 +127,7 @@
 
 //section 04
 .images__section-04{
-  padding-bottom: 6.25rem;
+  padding-bottom: 5rem;
 }
 
 .image__section-04-header{
@@ -169,11 +184,21 @@
   padding-left: 6%;
 }
 
+
+@media only screen and (max-width: 1500px){
+  .images__section-title{
+    font-size: 10.2rem;
+    top: -138px;
+  }
+}
+
 @media only screen and (max-width: map-get($grid-breakpoints, xxl)){
   .images__section-title{
     font-size: 6rem;
-    letter-spacing: 2rem;
-    top: -56px;
+    top: -77px;
+  }
+  .images__section-02 {
+    padding-top: 5rem;
   }
 }
 
@@ -181,7 +206,7 @@
   .images__section-title{
     font-size: 6rem;
     letter-spacing: 1.2rem;
-    top: -56px;
+    top: -77px;
   }
 }
 
@@ -189,61 +214,94 @@
   .images__section-title{
     font-size: 4rem;
     letter-spacing: 1.2rem;
-    top: -4px;
+    top: -24px;
   }
-
+  .image__section-header{
+    height: 350px;
+  }
 }
 
 @media only screen and (max-width: map-get($grid-breakpoints, md)){
-  .images__section-02 {
-    padding-top:  0;
-  }
-  .images__section-title{
-    font-size: 3rem;
-    letter-spacing: 1rem;
-  }
+
   //section 1
+  .img-section01__wrap-02{
+    margin-right: 15px;
+  }
   .img-section01__wrap-03 {
     margin-top: 7%;
-    margin-left: 0;
   }
   .img-section01__wrap-04 {
     margin-top: 20%;
   }
 
   //section 2
+  .images__section-02 {
+    padding-top:  0;
+  }
   .images__section-02{
     padding-top: 0;
-    padding-bottom: 3rem;
+    //padding-bottom: 3rem;
   }
   .images__section-title{
     position: relative;
     top: 0;
     bottom: 0;
     margin-top: 0;
-    margin-bottom: 6.25rem;
+    margin-bottom: 5rem;
+    font-size: 2.8rem;
+    letter-spacing: 1rem;
+    span{
+      text-transform: capitalize;
+    }
   }
   .img-section02__wrap-01{
-    margin-left: 0;
+
   }
   .img-section02__wrap-02{
-    margin-right: 0;
     margin-top: 12%;
   }
   .img-section02__wrap-03 {
-    margin-left: 0;
     margin-top: 10%;
+    padding-right: 0;
   }
   .img-section02__wrap-04{
-    margin-right: 0;
     margin-top: 15%;
   }
   .img-section02__wrap-05{
-    display: none;
+    margin-top: 20%;
   }
-  .images__section-03,
-  .images__section-04{
-    display: none;
+
+  //section 3
+  .img-section03__wrap-01{
+    padding-right: 0;
+  }
+
+  .img-section03__wrap-02{
+    margin-top: 20%;
+  }
+  .img-section03__wrap-03{
+    margin-top: 10%;
+  }
+  .img-section03__wrap-04 {
+    margin-top: 10%;
+  }
+  .img-section03__wrap-05{
+    margin-top: 5%;
+  }
+  .img-section03__wrap-06{
+
+  }
+  //section 4
+  .img-section04__wrap-03 {
+    margin-top: 5%;
+    padding-left: 0;
+  }
+  .img-section04__wrap-04 {
+    padding-left: 0;
+  }
+  .img-section04__wrap-06 {
+    margin-top: 20%;
+    padding-left: 0;
   }
 }
 

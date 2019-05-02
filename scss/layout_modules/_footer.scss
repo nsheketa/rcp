@@ -22,9 +22,11 @@
 
 .footer__title{
   text-transform: uppercase;
-  margin-right: 32px;
+  margin-right: 40px;
   font-family: $baseFontFamily;
+  font-size: 0.9rem;
 }
+
 
 .footer-menu__list{
   margin: 0;
@@ -115,12 +117,12 @@
 
 .footer-socials__icon-mail{
   background-image: url("#{$imgUrl}general/email.png");
-  width: 22px;
+  width: 15px;
 }
 
 .footer-socials__icon-tel{
   background-image: url("#{$imgUrl}general/phone.png");
-  width: 20px;
+  width: 13px;
 }
 
 

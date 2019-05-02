@@ -1,222 +1,219 @@
-.images__section{
-  position: relative;
+.images__section {
+    position: relative;
 }
 
-.images__section-01{
-  padding: 6.25rem 0;
+.images__section-01 {
+    padding: 6.25rem 0;
 }
 
-.img__wrap{
+.img__wrap {
 
 }
 
-.image__section-header{
-  width: 100%;
-  margin-bottom: 6.25rem;
-  img{
+.image__section-header {
     width: 100%;
-  }
+    margin-bottom: 6.25rem;
+    img {
+        width: 100%;
+    }
 }
 
-.img-section01__wrap-01{
-  margin-top: 35%;
+.img-section01__wrap-01 {
+    margin-top: 35%;
 }
 
-.img-section01__wrap-02{
-  margin-right: -15px;
+.img-section01__wrap-02 {
+    margin-right: -15px;
 }
 
-.img-section01__wrap-03{
-  margin-top: 40%;
+.img-section01__wrap-03 {
+    margin-top: 40%;
 }
 
-.img-section01__wrap-04{
-  margin-top: -20px;
+.img-section01__wrap-04 {
+    margin-top: -20px;
 }
 
-.img-section01__wrap-05{
-  margin-top: 25%;
+.img-section01__wrap-05 {
+    margin-top: 25%;
 }
-
 
 //section 02
-.images__section-02{
-  padding-top: 6.25rem;
+.images__section-02 {
+    padding-top: 6.25rem;
 }
 
-.images__section-title{
-  text-align: center;
-  font-size: 8rem;
-  font-weight: 400;
-  z-index: 10;
-  letter-spacing: 2rem;
-  position: absolute;
-  top: -109px;
-  left: 0;
-  right: 0;
-}
-
-.img-section02__wrap-01{
-
-}
-
-.img-section02__wrap-02{
-  margin-top: 28%;
-}
-
-.img-section02__wrap-03{
-  margin-top: 15%;
-  padding-right: 10%;
-}
-
-.img-section02__wrap-04{
-  margin-top: 71%;
-}
-
-.img-section02__wrap-05{
-  margin-top: -20%;
-}
-
-//section 03
-.images__section-03{
-  padding-bottom: 6.25rem;
-}
-.image__section-03-header{
-  margin-top: -4px;
-}
-
-.img-section03__wrap-01{
-  padding-right: 7%;
-}
-
-.img-section03__wrap-02{
-  margin-top: 48%;
-}
-
-.img-section03__wrap-03{
-
-}
-
-.img-section03__wrap-04{
-  margin-top: 71%;
-}
-
-.img-section03__wrap-05{
-  margin-top: -25%;
-}
-
-.img-section03__wrap-06{
-  margin-top: 10%;
-  padding-left: 10%;
-}
-
-//section 03
-.images__section-04{
-  padding-bottom: 6.25rem;
-}
-
-.image__section-04-header{
-
-}
-
-.img-section04__wrap-01{
-
-}
-
-.img-section04__wrap-02{
-  margin-top: 15%;
-  padding-left: 7%;
-}
-
-.img-section04__wrap-03{
-  margin-top: -27%;
-  padding-left: 15%;
-}
-
-.img-section04__wrap-04{
-  padding-left: 7%;
-  margin-top: 10%;
-}
-
-.img-section04__wrap-05{
-  margin-top: -25%;
-}
-
-.img-section04__wrap-06{
-  margin-top: 20%;
-  padding-left: 6%;
-}
-
-.img-section04__wrap-07{
-  padding-right: 6%;
-}
-
-
-.img-section04__wrap-08{
-  padding-left: 10%;
-}
-
-.img-section04__wrap-09{
-  padding-left: 10%;
-  padding-right: 4%;
-}
-
-.img-section04__wrap-10{
-  padding-right: 2%;
-}
-
-.img-section04__wrap-11{
-  padding-left: 6%;
-}
-
-@media only screen and (max-width: map-get($grid-breakpoints, xxl)){
-  .images__section-title{
-    font-size: 6rem;
+.images__section-title {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 400;
+    z-index: 10;
     letter-spacing: 2rem;
-    top: -56px;
-  }
+    position: absolute;
+    top: -109px;
+    left: 0;
+    right: 0;
 }
 
-@media only screen and (max-width: map-get($grid-breakpoints, xl)){
-  .images__section-title{
-    font-size: 6rem;
-    letter-spacing: 1.2rem;
-    top: -56px;
-  }
+.img-section02__wrap-01 {
+
 }
 
-@media only screen and (max-width: map-get($grid-breakpoints, lg)){
-  .images__section-title{
-    font-size: 4rem;
-    letter-spacing: 1.2rem;
-    top: -4px;
-  }
+.img-section02__wrap-02 {
+    margin-top: 28%;
 }
 
-
-@media only screen and (max-width: map-get($grid-breakpoints, md)){
-  .images__section-02 {
-    padding-top:  0;
-  }
-  .images__section-title{
-    font-size: 3rem;
-    letter-spacing: 1rem;
-    top: -77px;
-  }
-  .img-section02__wrap-03{
-    padding-right: 0%;
-  }
+.img-section02__wrap-03 {
+    margin-top: 15%;
+    padding-right: 10%;
 }
 
-
-@media only screen and (max-width: map-get($grid-breakpoints,sm)){
-  .images__section-title{
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
-    top: -52px;
-  }
+.img-section02__wrap-04 {
+    margin-top: 71%;
 }
 
-@media only screen and (max-width: map-get($grid-breakpoints,xs)){
+.img-section02__wrap-05 {
+    margin-top: -20%;
+}
+
+//section 03
+.images__section-03 {
+    padding-bottom: 6.25rem;
+}
+
+.image__section-03-header {
+    margin-top: -4px;
+}
+
+.img-section03__wrap-01 {
+    padding-right: 7%;
+}
+
+.img-section03__wrap-02 {
+    margin-top: 48%;
+}
+
+.img-section03__wrap-03 {
+
+}
+
+.img-section03__wrap-04 {
+    margin-top: 71%;
+}
+
+.img-section03__wrap-05 {
+    margin-top: -25%;
+}
+
+.img-section03__wrap-06 {
+    margin-top: 10%;
+    padding-left: 10%;
+}
+
+//section 03
+.images__section-04 {
+    padding-bottom: 6.25rem;
+}
+
+.image__section-04-header {
+
+}
+
+.img-section04__wrap-01 {
+
+}
+
+.img-section04__wrap-02 {
+    margin-top: 15%;
+    padding-left: 7%;
+}
+
+.img-section04__wrap-03 {
+    margin-top: -27%;
+    padding-left: 15%;
+}
+
+.img-section04__wrap-04 {
+    padding-left: 7%;
+    margin-top: 10%;
+}
+
+.img-section04__wrap-05 {
+    margin-top: -25%;
+}
+
+.img-section04__wrap-06 {
+    margin-top: 20%;
+    padding-left: 6%;
+}
+
+.img-section04__wrap-07 {
+    padding-right: 6%;
+}
+
+.img-section04__wrap-08 {
+    padding-left: 10%;
+}
+
+.img-section04__wrap-09 {
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+.img-section04__wrap-10 {
+    padding-right: 2%;
+}
+
+.img-section04__wrap-11 {
+    padding-left: 6%;
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, xxl)) {
+    .images__section-title {
+        font-size: 6rem;
+        letter-spacing: 2rem;
+        top: -56px;
+    }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, xl)) {
+    .images__section-title {
+        font-size: 6rem;
+        letter-spacing: 1.2rem;
+        top: -56px;
+    }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, lg)) {
+    .images__section-title {
+        font-size: 4rem;
+        letter-spacing: 1.2rem;
+        top: -4px;
+    }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, md)) {
+    .images__section-02 {
+        padding-top: 0;
+    }
+    .images__section-title {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        top: -77px;
+    }
+    .img-section02__wrap-03 {
+        padding-right: 0%;
+    }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
+    .images__section-title {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+        top: -52px;
+    }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, xs)) {
 
 }

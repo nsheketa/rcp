@@ -8869,9 +8869,6 @@ body.preload {
   .images__section .row .img__wrap {
     opacity: 0;
     transform: translateY(20px); }
-    .images__section .row .img__wrap.slideIn {
-      opacity: 1;
-      transform: translateY(0px); }
 
 .image__section-parallax {
   width: 100%;

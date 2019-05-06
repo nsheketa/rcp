@@ -3,6 +3,21 @@ $(document).ready(function () {
     lineLength();
     iconsVisibility();
 
+    function loaderRemove() {
+        var $body = $('body');
+
+        $body.removeClass('is-loading');
+        $('.homepage__loader').removeClass('is-visible');
+    }
+    $('.img__wrap img').imagesLoaded()
+        .always( function( instance ) {
+            console.log('all images loaded');
+        })
+        .done( function( instance ) {
+            loaderRemove();
+            console.log('all images successfully loaded');
+        })
+
     //header nav lines
     function lineLength() {
         var line = $('.header-nav__line');
@@ -83,12 +98,12 @@ $(document).ready(function () {
     $('.homepage__line-menu-link,.homepage__line-left-icon').click(function (e) {
         e.preventDefault();
         $('.menu').addClass('menu--open');
-        $('body').addClass('no-scroll');
+        $('body, html').addClass('no-scroll');
     });
 
     $('.menu__close').click(function () {
         $('.menu').removeClass('menu--open');
-        $('body').removeClass('no-scroll');
+        $('body, html').removeClass('no-scroll');
     });
 
     $('.menu-list__link,.menu-sublist__link').click(function (e) {
@@ -165,4 +180,5 @@ $(document).ready(function () {
 
 $(window).on('load', function () {
     $(".homepage__line").addClass("animated");
+    $('body').removeClass('is-loading').addClass('is-loaded');
 });

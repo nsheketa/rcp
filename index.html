@@ -13,17 +13,29 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
-<body>
+<body class="is-loading">
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
 <![endif]-->
+
+<div class="homepage__loader is-visible">
+    <div class="loaders__wrap">
+        <span class="loader"></span>
+        <span class="loader"></span>
+        <span class="loader"></span>
+        <span class="loader"></span>
+        <span class="loader"></span>
+    </div>
+</div>
+
 <div class="homepage-content__wrapper">
 
-    <a href="index.html">
-        <div class="header__logo"></div>
-    </a>
+    <!--<a href="index.html">-->
+        <!--<div class="header__logo"></div>-->
+    <!--</a>-->
     <div class="homepage__line homepage__line-left">
         <!--<span class="homepage__line-icon homepage__line-left-icon"></span>
         <a href="#" class="homepage__line-link homepage__line-menu-link">Open menu</a>-->
@@ -399,7 +411,7 @@
       -->
                 <div class="footer-copyright">
                     <span class="footer-copyright__icon"></span>
-                    <div class="footer-copyright__text">2018 Ruth Chao Studio</div>
+                    <div class="footer-copyright__text">2019 Ruth Chao Studio</div>
                 </div>
 
             </div>
@@ -478,6 +490,7 @@
 <script src="js/vendor/TweenMax.min.js"></script>
 <script src="js/vendor/animation.velocity.min.js"></script>
 <script src="js/vendor/animation.gsap.min.js"></script>
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 
 <script>

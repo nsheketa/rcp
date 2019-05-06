@@ -8342,13 +8342,21 @@ ul li {
 .right-0 {
   margin-right: -15px; }
 
-body.no-scroll {
+body.no-scroll, html.no-scroll {
   overflow-y: hidden; }
-body.preload {
+body.preload, html.preload {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important; }
+body.is-loading, html.is-loading {
+  overflow: hidden; }
+  body.is-loading .homepage-content__wrapper, html.is-loading .homepage-content__wrapper {
+    opacity: 0;
+    visibility: hidden; }
+body.is-loaded .homepage-content__wrapper, html.is-loaded .homepage-content__wrapper {
+  opacity: 1;
+  visibility: visible; }
 
 @media only screen and (max-width: 768px) {
   .left-sm-0 {
@@ -9382,3 +9390,69 @@ body.preload {
 
   .footer-info__inner {
     margin: auto; } }
+.homepage__loader {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: #fff;
+  display: none; }
+  .homepage__loader.is-visible {
+    display: block; }
+
+.loaders__wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.loader {
+  display: inline-block;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #000;
+  -webkit-animation: loading 1.5s infinite cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation: loading 1.5s infinite cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards; }
+  .loader:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s; }
+  .loader:nth-of-type(2) {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s; }
+  .loader:nth-of-type(3) {
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s; }
+  .loader:nth-of-type(4) {
+    -webkit-animation-delay: 4.8s;
+    animation-delay: 4.8s; }
+  .loader:nth-of-type(5) {
+    -webkit-animation-delay: 6.4s;
+    animation-delay: 6.4s; }
+
+@keyframes loading {
+  0% {
+    -webkit-transform: scale(0) translateY(0);
+    -moz-transform: scale(0) translateY(0);
+    -ms-transform: scale(0) translateY(0);
+    -o-transform: scale(0) translateY(0);
+    transform: scale(0) translateY(0); }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
+/*# sourceMappingURL=main.css.map */

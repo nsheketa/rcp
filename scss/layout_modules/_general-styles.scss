@@ -6,7 +6,7 @@
   margin-right: -15px;
 }
 
-body{
+body, html{
   &.no-scroll{
     overflow-y: hidden;
   }
@@ -16,6 +16,19 @@ body{
     -ms-transition: none !important;
     -o-transition: none !important;
   }
+    &.is-loading{
+        overflow: hidden;
+        .homepage-content__wrapper{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    &.is-loaded{
+        .homepage-content__wrapper{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 

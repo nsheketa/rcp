@@ -8868,7 +8868,7 @@ body.preload {
   position: relative; }
   .images__section .row .img__wrap {
     opacity: 0;
-    transform: translateY(20px); }
+    transform: scale(0.98); }
 
 .image__section-parallax {
   width: 100%;
@@ -8948,6 +8948,9 @@ body.preload {
   margin-top: -20%; }
 
 .images__section-03 {
+  /**/
+  padding-top: 3rem;
+  /**/
   padding-bottom: 5rem; }
 
 .image__section-03-header {

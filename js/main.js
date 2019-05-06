@@ -142,7 +142,7 @@ $(document).ready(function () {
         var $this = $(this);
         var trigger = $('.row');
         var el = $this.find('.img__wrap');
-        var slide = TweenMax.staggerTo(el, 0.5, {y: 0, 'opacity': '1', ease: Linear.easeIn}, 0.3);
+        var slide = TweenMax.staggerTo(el, 0.5, {y: 0, 'opacity': '1', scale: 1, ease: Linear.easeIn}, 0.3);
 
         var scrollScene01 = new ScrollMagic.Scene({
             triggerElement: this,

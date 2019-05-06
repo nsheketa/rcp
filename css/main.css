@@ -9392,6 +9392,7 @@ body.is-loaded .homepage-content__wrapper, html.is-loaded .homepage-content__wra
     margin: auto; } }
 .homepage__loader {
   position: fixed;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
